@@ -16,7 +16,7 @@ from machine import Pin, I2C
 
 
 # Note - have to specificy I2C bus (0 or 1) to match the pins being used
-i2c = I2C(0, scl=Pin(1), sda=Pin(0))
+i2c = I2C(0, scl=Pin(9), sda=Pin(8))
 
 print('I2C SCANNER')
 devices = i2c.scan()
